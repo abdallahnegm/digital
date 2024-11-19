@@ -1,0 +1,123 @@
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --primary-color: #66FCF1;
+    --main-border-radius:15px;
+    --black-color:#000;
+    --white-color: #fff;
+    --main-tran: 0.5s;
+}
+/*end global rules*/
+/* start header  */
+header .container{
+    padding-top: 0 !important;
+}
+/* end header  */
+/* start hero  */
+.banner {
+    margin-top: -130px;
+}
+/* end hero  */
+.contact{
+    padding: 50px 0;
+    background-image: url("..//images/Ellipse\ 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("..//images/Ellipse\ 414.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    z-index: -1;
+}
+.contact .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    color: var(--white-color);
+    background-color: #FFFFFF0A;
+    padding: 50px;
+}
+.contact h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+@media (max-width:992px) {
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact h1 {
+        font-size: 18px;
+    }
+}
+.contact p{
+    color: #FFFFFF99;
+}
+.contact form input , .contact form textarea{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--white-color);
+    padding: 10px ;
+    margin: 20px 0;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+    outline: none;
+}
+.contact form textarea{
+    resize: none;
+}
+.contact form input::placeholder , .contact form textarea::placeholder{
+    color: var(--white-color);
+}
+.contact form input:focus , .contact form textarea:focus{
+    border: 1px solid var(--primary-color);
+}
+.contact form button{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    padding: 10px 30px;
+    border-radius: var(--main-border-radius);
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact form button:hover{
+    background-color: var(--white-color);
+}
+footer .contact{
+    padding: unset;
+}

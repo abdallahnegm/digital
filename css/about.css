@@ -1,0 +1,112 @@
+/*start global rules*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    --primary-color: #66FCF1;
+    --main-border-radius:15px;
+    --black-color:#000;
+    --white-color: #fff;
+    --main-tran: 0.5s;
+}
+
+/*end global rules*/
+/* start header   */
+
+/* end header   */
+/* start about us  */
+.banner{
+    padding: 150px 0;
+    background:url('..//images/kelly-sikkema-o2TRWThve_I-unsplash_2-scaled-e1712554479162\ 1.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -100px;
+    color: var(--white-color);
+    text-align: center;
+}
+.banner .container h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.banner .container p{
+    font-size: 18px;
+    color: #FFFFFF99;
+    width: 70%;
+    margin: auto;
+}
+
+/* end about us  */
+/* start range  */
+.range{
+    padding: 50px 0;
+    background: url("..//images/image\ \(10\).png") center no-repeat;
+    background-size: cover;
+    color: var(--white-color);
+}
+.range .container .top{
+    display: flex;
+}
+.range .container .top h1{
+    font-size: 40px;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+.range .container .top p{
+    font-size: 18px;
+    color: #FFFFFF99;
+    width: 70%;
+    margin: auto;
+}
+.range .container .bottom{
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.range .container .left , .range .container .right{
+    width: 50%;
+}
+@media (max-width:992px) {
+    .range .container .bottom , .range .container .top{
+        flex-direction: column;
+    }
+    .range .container .left , .range .container .right , .range .container .top p{
+        width: 100%;
+    }
+}
+.range .container .card .progress{
+    background-color: #f7f7f7;
+    height: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    margin: 20px 0;
+    transition: var(--main-tran);
+    -webkit-transition: var(--main-tran);
+    -moz-transition: var(--main-tran);
+    -ms-transition: var(--main-tran);
+    -o-transition: var(--main-tran);
+}
+.range .container .card .progress .barr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: var(--main-border-radius);
+    -webkit-border-radius: var(--main-border-radius);
+    -moz-border-radius: var(--main-border-radius);
+    -ms-border-radius: var(--main-border-radius);
+    -o-border-radius: var(--main-border-radius);
+    color: var(--black-color);
+    font-weight: bold;
+}
+/* end range  */
